@@ -1,0 +1,181 @@
+.navbar-brand{
+	font-family: "Protest Strike", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+// variable
+$color-letra:white;
+$color-titulo:black;
+
+body{
+	font-family: Arial, sans-serif;
+	background-color:$color-titulo;
+}
+
+.dropdown-menu{
+	color: $color-letra;
+}
+
+.dropdown-item{
+	color: $color-letra;
+}
+
+.header{
+	color: $color-titulo;
+	background-image: url('foto.jpg');
+	height: 600px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: cover;
+} 
+
+.header h1{
+	font-family: "Protest Strike", sans-serif;
+	font-weight: 800px;
+	font-style: normal;
+	text-align: start;
+	text-decoration: outline;
+	margin-right: 250px; 
+	margin:top 50px; 
+	position: absolute;
+
+}
+
+.header h2{
+	margin-bottom:25px;
+	text-align: end;
+	text-style:oblique;
+}
+
+.container{
+	background-color: $color-letra;
+	max-width: 1200px;
+    margin: auto;
+}
+
+.container h1{
+	text-align: center;
+}
+
+.product{
+	border: 1px solid #ccc; /*borde para separar los productos*/
+	border-radius: 5px;
+	background-color: $color-letra;
+	padding: 10px;
+	margin: 20px;
+	text-align: center; /*el texto debe ir al centro*/ 
+	transition: transform 0.2s; /*transicion para la transformacion del hover*/
+}
+
+.product:hover{
+	transform: scale(1.05); /*el contenedor de expandira cuando el cursor este arriba*/ 
+}
+
+ // tamaños
+
+$alto:400px;
+$ancho:300px;
+
+.product img{
+	height: $alto;
+	width: $ancho;
+}
+
+.product-name{
+	font-size: 25px;
+}
+
+.product-price{
+	font-size: 20px;
+}
+
+.product button{
+	color: $color-letra;
+	background-color: $color-titulo;
+	border-radius: 10%;
+	transition:transform 0.2;
+}
+
+.product button:hover{
+	color: #352a5e;
+	background-color: #978d86;
+	transform: scale(1.05);
+}
+
+#prodest h1{
+	font-size: 25px;
+
+}
+
+#prodest h1::before{
+	content:"Nuevo";
+	position: relative;
+	right: 20px;
+	color: #352a5e;
+	padding: 10px;
+	background-color: #978d86;
+	border: 2px solid red;
+	border-radius: 20%;
+	font-size: 20px;
+	z-index:40;
+}
+
+#prodest h1::after{
+	content:"-10%";
+	position: relative;
+	left: 20px;
+	color: $color-letra;
+	padding: 10px;
+	background-color: $color-titulo;
+	border: 2px solid red;
+	border-radius: 100%;
+	font-size: 20px;
+	z-index: 1;
+}
+
+footer {
+    color: #616a6b;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.footer-content h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-content p {
+    margin: 5px 0 15px;
+    font-size: 16px;
+}
+
+.socials, .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li, .footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.socials a, .footer-links a {
+    text-decoration: none;
+    color: #616a6b;
+}
+
+.footer-bottom {
+    background-color: $color-letra;
+    padding: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
